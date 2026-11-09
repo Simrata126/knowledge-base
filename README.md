@@ -15,4 +15,4 @@ A static site for tracking projects, learnings and papers. No build step.
 ## Publish on GitHub Pages
 1. Create a repo (e.g. `kb`) and push these files to the `main` branch.
 2. Repo Settings > Pages > Deploy from branch > `main` / root.
-3. Your site appears at `https://<username>.github.io/kb/`.
+3. Your site appears at `https://Simrata126.github.io/kb/`.
