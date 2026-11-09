@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knowledge Base</title>
+  <meta name="description" content="Personal knowledge base: projects, learnings and reading notes.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow" id="siteName"></p>
+      <h1 id="siteTitle"></h1>
+      <p class="tagline" id="siteTagline"></p>
+      <nav class="links" id="siteLinks"></nav>
+      <div class="stats" id="stats"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="controls" aria-label="Search and filter">
+      <input id="search" type="search" placeholder="Search projects, learnings and papers..." aria-label="Search">
+      <div class="chips" id="tagChips" aria-label="Filter by topic"></div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects <span class="count" id="cProjects"></span></h2>
+      <div class="grid" id="projectsList"></div>
+    </section>
+
+    <section id="papers">
+      <h2>Reading list <span class="count" id="cPapers"></span></h2>
+      <div class="seg" id="paperStatus" role="group" aria-label="Paper status">
+        <button data-s="all" class="on">All</button>
+        <button data-s="to-read">To read</button>
+        <button data-s="reading">Reading</button>
+        <button data-s="read">Read</button>
+      </div>
+      <div class="grid" id="papersList"></div>
+    </section>
+
+    <section id="learnings">
+      <h2>Learnings <span class="count" id="cLearnings"></span></h2>
+      <div class="list" id="learningsList"></div>
+    </section>
+
+    <p class="empty" id="empty" hidden>Nothing matches. Try clearing the search or topic filter.</p>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Edit <code>data.js</code> to update this site. Built as a static page, so it works on GitHub Pages.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
